@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "betteritemtooltips",
+  "version": "${version}",
+  "name": "BetterItemTooltips",
+  "description": "Adds new features to item tooltips.",
+  "authors": [
+    "Awakened Redstone"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/betteritemtooltips/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": ["com.awakenedredstone.betteritemtooltips.BetterItemTooltips"],
+    "modmenu": [ "com.awakenedredstone.betteritemtooltips.init.ModMenuSupport" ]
+  },
+  "mixins": [
+    "betteritemtooltips.mixins.json"
+  ],
+  "depends": {
+    "modmenu": ">=1.16.9",
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": ">=1.16.5"
+  }
+}
